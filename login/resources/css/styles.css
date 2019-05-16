@@ -54,3 +54,136 @@ main > .container {
   margin: 0 5px; 
   display: inline; 
 }
+
+.btn-primary, 
+.btn-primary:hover, 
+.btn-primary:active, 
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: rgba(255,180,68,1);
+  border: none;
+  border-radius: 9999px;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255,180,68,0.8);
+  border-color: rgba(255,180,68,0.8);
+}
+
+.form-control,
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+  background-color: rgba(42,41,41,1);
+  border: none;
+  box-shadow: none;
+  border-radius: 9999px !important;
+  color: rgba(145,146,147,1) !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.zocial,
+.zocial:focus,
+.zocial:hover,
+.zocial:active,
+a.zocial {
+  background-color: rgba(35,35,35,1) !important;
+  background-image: none !important;
+  border-radius: 9999px !important;
+  color: rgba(145,146,147,1) !important;
+  box-shadow: none !important;
+  background-image: none;
+  border: none !important;
+  text-decoration: none !important;
+  font-family : inherit !important;
+}
+
+.zocial:hover {
+  background-color: rgba(35,35,35,0.8) !important;
+  border-color: rgba(35,35,35,0.8) !important;
+}
+
+.container {
+  position: relative;
+}
+
+.link-back {
+  position: absolute;
+  left: 0px;
+  top: calc(60px - 0.7rem);
+  visibility: hidden;
+  z-index: 100;
+}
+
+.link-back::before {
+  content: '\2190'; /* left arrow */
+  visibility: visible;
+  padding: 15px;
+  font-size: 2rem;
+}
+
+.link-back:hover {
+  text-decoration: none;
+}
+
+/* match values in header.tsx */
+.navbar {
+  background-image: url(https://halogo.jx-staging.halogo.hakt.com.au/content/2ce5e5527c7d5c5a9b9326e74576de25.svg);
+  background-color: #45525c !important;
+}
+
+.navbar img {
+  height: 45px;
+  margin: 2px;
+}
+
+/* hide header which is the same value in header.tsx - 1 */
+@media only screen and (max-width: 991px) {
+  header {
+    visibility: hidden;
+  }
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  font-size: 1rem !important;
+}
+
+a,
+.btn-link {
+  color: rgba(255,180,68,1);
+}
+
+a:hover,
+.btn-link:hover {
+  color: rgba(255,180,68,0.8);
+}
+
+footer a {
+  color: rgba(145,146,147,0.5);
+}
+
+html {
+  height: auto !important;
+  min-height: 100%;
+}
+
+body {
+  text-align:center;
+  color: rgba(145,146,147,1);
+  background-image: linear-gradient(#2C2D35, black);
+}
+
+
+@media all and (max-width: 991px) {
+  header {
+    display: none;
+  }
+} 
+

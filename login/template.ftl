@@ -116,20 +116,22 @@
                             <div id="kc-content" class="${properties.kcContentClass!}">
                                 <div id="kc-content-wrapper" class="${properties.kcContentWrapperClass!}">
 
-                                    <#if displayMessage && message?has_content>
-                                        <#if message.type = 'error'>
-                                            <div class="alert alert-danger" role="alert" tabindex="-1">
-                                                ${message.summary?no_esc}
-                                            </div>
-                                        <#else>
-                                            <div class="${properties.kcFeedbackAreaClass!}">
-                                                <div class="alert alert-${message.type}"><p>
-                                                    <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
-                                                    <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
-                                                    <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
-                                                    <span class="kc-feedback-text">${message.summary}</span></p>
+                                    <#if displayMessageImportant!true != false >
+                                        <#if displayMessage && message?has_content>
+                                            <#if message.type = 'error'>
+                                                <div class="alert alert-danger" role="alert" tabindex="-1">
+                                                    ${message.summary?no_esc}
                                                 </div>
-                                            </div>
+                                            <#else>
+                                                <div class="${properties.kcFeedbackAreaClass!}">
+                                                    <div class="alert alert-${message.type}"><p>
+                                                        <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
+                                                        <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
+                                                        <#if message.type = 'info'><span class="${properties.kcFeedbackInfoIcon!}"></span></#if>
+                                                        <span class="kc-feedback-text">${message.summary}</span></p>
+                                                    </div>
+                                                </div>
+                                            </#if>
                                         </#if>
                                     </#if>
 
