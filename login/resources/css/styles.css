@@ -194,3 +194,18 @@ body {
   }
 } 
 
+.sms-code-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sms-code,
+.sms-code:focus,
+.sms-code:active,
+.sms-code:hover {
+  height: 62px;
+  width: 62px;
+  padding-left: 23px !important;
+  font-size: 1.75rem !important;
+}
