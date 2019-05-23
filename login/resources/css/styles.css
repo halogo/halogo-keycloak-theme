@@ -112,12 +112,12 @@ a.zocial {
 
 /* this fixes microsoft edge squashing things up */
 #main {
-  width: 349px !important;
+  min-width: 349px !important;
 }
 
 @media all and (max-width: 349px) {
   #main {
-      width: 100% !important;
+      min-width: 100% !important;
   }
 }
 
