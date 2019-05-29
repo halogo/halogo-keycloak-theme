@@ -65,6 +65,11 @@
                     </div>
             </form>
         </#if>
+        <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
+            <div id="kc-registration">
+                <p>${msg("noAccount")} <a href="${url.registrationUrl}">${msg("registerLink")}</a></p>
+            </div>
+        </#if>
     <#elseif section = "info" >
         <#if realm.password && social.providers??>
             <#-- This section of the theme has not yet been well styled. Non-trivial user research, interaction design and content design work is required to develop a solution for login using 3rd-party identity providers. -->
@@ -82,10 +87,5 @@
                 <p><a href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></p>
             </#if>
         </div>
-        <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-            <div id="kc-registration">
-                <p>${msg("noAccount")} <a href="${url.registrationUrl}">${msg("registerLink")}</a></p>
-            </div>
-        </#if>
     </#if>
 </@layout.registrationLayout>
