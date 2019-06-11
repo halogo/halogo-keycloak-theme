@@ -29,4 +29,16 @@ $(function() {
             focusNextElement.select();
         }
     }
+
+    // combine the mobile prefix and the mobile number into the hidden mobile field
+    updateMobileNumber = () => {
+        var mobilePrefixField = document.getElementsByName('mobile_prefix')[0];
+        var mobileNumberField = document.getElementsByName('mobile_number')[0];
+        var hiddenField = document.getElementsByName('user.attributes.mobile_number')[0];
+        
+        var prefix = mobilePrefixField.options[mobilePrefixField.selectedIndex].value;
+        var number = mobileNumberField.value;
+
+        hiddenField.value = prefix + number;
+    }
 });

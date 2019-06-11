@@ -170,7 +170,29 @@ a.zocial {
   display: flex;    
   flex-direction: row;    
   justify-content: space-between;    
-}    
+}
+
+.mobile-number-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.mobile-number-prefix-container {
+  flex: 2;
+  margin-right: 5px;
+}
+
+.mobile-number-container {
+  flex: 3;
+}
+
+.mobile-number-prefix,    
+.mobile-number-prefix:focus,    
+.mobile-number-prefix:active,    
+.mobile-number-prefix:hover {
+  padding-right: 0px !important;
+  height: 100% !important;
+}
 
 .sms-code,    
 .sms-code:focus,    
