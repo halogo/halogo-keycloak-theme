@@ -36,8 +36,9 @@
                         <div class="mobile-number-prefix-container">
                             <div class="select-container">
                                 <select class="form-control mobile-number-prefix" name="mobile_prefix" onchange="updateMobileNumber()">
-                                    <option value="+61">AU (+61)</option>
-                                    <option value="+65">SG (+65)</option>
+                                    <option value="+61">+61</option>
+                                    <option value="+64">+64</option>
+                                    <option value="+65">+65</option>
                                 </select>
                             </div>
                         </div>
