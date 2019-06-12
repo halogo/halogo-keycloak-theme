@@ -34,10 +34,12 @@
                     <input type="hidden" id="user.attributes.mobile_number" class="${properties.kcInputClass!} ${messagesPerField.printIfExists('user.attributes.mobile_number',properties.kcFormGroupErrorClass!)}" name="user.attributes.mobile_number" value="${(user.attributes.mobile_number!'')}" placeholder="${msg('mobile')}" />
                     <div class="mobile-number-flex-container">
                         <div class="mobile-number-prefix-container">
-                            <select class="form-control mobile-number-prefix" name="mobile_prefix" onchange="updateMobileNumber()">
-                                <option value="+61">AU (+61)</option>
-                                <option value="+65">SG (+65)</option>
-                            </select>
+                            <div class="select-container">
+                                <select class="form-control mobile-number-prefix" name="mobile_prefix" onchange="updateMobileNumber()">
+                                    <option value="+61">AU (+61)</option>
+                                    <option value="+65">SG (+65)</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="mobile-number-container">
                             <input type="text" class="form-control mobile-number" name="mobile_number" value="" placeholder="Mobile number" onkeyup="updateMobileNumber()" />

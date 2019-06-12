@@ -85,6 +85,41 @@ main > .container {
   padding-right: 20px !important;
 }
 
+.select-container {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.select-container:after {
+  top: 50%;
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(145,146,147,1);
+  border-width: 5px;
+  margin-top: -2px;
+  z-index: 100;
+}
+
+.select-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.select-container select:focus {
+  outline: none;
+}
+
 .zocial,
 .zocial:focus,
 .zocial:hover,
@@ -178,12 +213,16 @@ a.zocial {
 }
 
 .mobile-number-prefix-container {
-  flex: 2;
   margin-right: 5px;
 }
 
+.mobile-number-prefix-container .select-container,
+.mobile-number-prefix {
+  width: 80px;
+}
+
 .mobile-number-container {
-  flex: 3;
+  flex: 1;
 }
 
 .mobile-number-prefix,    
