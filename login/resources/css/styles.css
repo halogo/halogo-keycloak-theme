@@ -89,6 +89,7 @@ main > .container {
   padding: 0;
   margin: 0;
   width: 120px;
+  height: 100%; /* attempt to fix iphone bug */
   border-radius: 3px;
   overflow: hidden;
   position: relative;
