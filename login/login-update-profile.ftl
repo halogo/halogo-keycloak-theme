@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="mobile-number-container">
-                            <input type="text" class="form-control mobile-number" name="mobile_number" value="" placeholder="Mobile number" onkeyup="updateMobileNumber()" />
+                            <input type="tel" class="form-control mobile-number" name="mobile_number" value="" placeholder="Mobile number" onkeyup="updateMobileNumber()" />
                         </div>
                     </div>
                     <small id="emailHelp" class="form-text text-muted">${msg("mobileHelp")}</small>
