@@ -9,6 +9,9 @@
     <#elseif section = "back">
         <a class="link-back" href="${url.loginUrl}">${msg("backToLogin")}</a>
     <#elseif section = "form">
+        <div class="alert alert-danger" role="alert" tabindex="-1" id="terms_and_conditions_error" style="display:none">
+            ${msg('termsAndCondistionsError')}
+        </div>
         <form id="kc-register-form" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
           <input type="text" readonly value="this is not a login form" style="display: none;">
           <input type="password" readonly value="this is not a login form" style="display: none;">
@@ -58,6 +61,28 @@
                     </div>
                 </div>
                 </#if>
+
+                <div class="form-group">
+                    <input type="checkbox" name="user.attributes.terms_and_conditions" id="terms_and_conditions" /> ${msg('termsAndCondistionsAgree')?no_esc}
+                    <script>
+                        var terms_and_conditions = "${register.formData['user.attributes.terms_and_conditions']!''}";
+                        if(terms_and_conditions) {
+                            $("#terms_and_conditions").prop('checked', true);
+                        } else {
+                            $("#terms_and_conditions").val(Date.now());
+                        }
+
+                        $('#kc-register-form').submit(function() {
+                            if ($('#terms_and_conditions', this).is(':checked')) {
+                                return true;
+                            } else {
+                                $('.alert').css("display", "none");
+                                $('#terms_and_conditions_error').css("display", "block");
+                                return false;
+                            }
+                        });
+                    </script>
+                </div>
             </div>
             <div class="${properties.kcFormGroupClass!}">
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
