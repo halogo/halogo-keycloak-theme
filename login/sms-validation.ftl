@@ -13,10 +13,10 @@
                 <div class="${properties.kcInputWrapperClass!}">
                     <input type="hidden" id="smsCode" class="${properties.kcInputClass!} ${messagesPerField.printIfExists('smsCode',properties.kcFormGroupErrorClass)}" name="smsCode" placeholder="${msg('sms-auth.code')}" autocomplete="false" value="0000" />
                     <div class="sms-code-container">
-                        <input type="text" id="smsCode_1" class="form-control sms-code" name="smsCode_1" autocomplete="false" onkeyup="onEnterSmsCode(this, 0, 'smsCode_2', event, 'smsCode')" onclick="this.select();" autofocus />
-                        <input type="text" id="smsCode_2" class="form-control sms-code" name="smsCode_2" autocomplete="false" onkeyup="onEnterSmsCode(this, 1, 'smsCode_3', event, 'smsCode')" onclick="this.select();" />
-                        <input type="text" id="smsCode_3" class="form-control sms-code" name="smsCode_3" autocomplete="false" onkeyup="onEnterSmsCode(this, 2, 'smsCode_4', event, 'smsCode')" onclick="this.select();" />
-                        <input type="text" id="smsCode_4" class="form-control sms-code" name="smsCode_4" autocomplete="false" onkeyup="onEnterSmsCode(this, 3, 'smsCode_5', event, 'smsCode')" onclick="this.select();" />
+                        <input type="tel" id="smsCode_1" class="form-control sms-code" name="smsCode_1" autocomplete="false" onkeyup="onEnterSmsCode(this, 0, 'smsCode_2', event, 'smsCode')" onclick="this.select();" autofocus />
+                        <input type="tel" id="smsCode_2" class="form-control sms-code" name="smsCode_2" autocomplete="false" onkeyup="onEnterSmsCode(this, 1, 'smsCode_3', event, 'smsCode')" onclick="this.select();" />
+                        <input type="tel" id="smsCode_3" class="form-control sms-code" name="smsCode_3" autocomplete="false" onkeyup="onEnterSmsCode(this, 2, 'smsCode_4', event, 'smsCode')" onclick="this.select();" />
+                        <input type="tel" id="smsCode_4" class="form-control sms-code" name="smsCode_4" autocomplete="false" onkeyup="onEnterSmsCode(this, 3, 'smsCode_5', event, 'smsCode')" onclick="this.select();" />
                     </div>
                 </div>
             </div>
