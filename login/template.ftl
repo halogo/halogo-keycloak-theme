@@ -79,7 +79,7 @@
     <header role="banner" id="global-header" >
         <nav class="${properties.kcHeaderClass!}">
             <a href="#" title="Halo Go" id="logo" class="content">
-              <img src="${url.resourcesPath}/img/logo-halogo.png" width="167" height="47" alt="">
+              <img src="${url.resourcesPath}/img/logo-halogo.svg" width="167" height="47" alt="">
             </a>
         </nav>
     </header>

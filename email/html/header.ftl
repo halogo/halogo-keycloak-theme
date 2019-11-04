@@ -10,7 +10,7 @@
 
     <div class="app-header">
         <a href="https://www.halogo.com.au" class="brand-logo">
-            <img src="https://halogo.jx-staging.halogo.hakt.com.au/content/images/logo-halogo.png" />
+            <img src="https://halogo.jx-staging.halogo.hakt.com.au/content/images/logo-halogo.svg" />
         </a>
     </div>
 
