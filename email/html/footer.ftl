@@ -1,7 +1,7 @@
    </div>
 
     <div class="footer">
-        © Halo Go 2019. For support contact XXXX or [+email us+|TBC]
+        © HaloGo 2019 All rights reserved. For support email us at <a href="mailto:hello@halgo.com.au">hello@halgo.com.au</a>
     </div>
 
 </body>
