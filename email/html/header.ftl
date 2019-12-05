@@ -17,7 +17,7 @@
 
         .float-container {
             background: #e8ebed url('https://halogo-staging-public-assets.s3-ap-southeast-2.amazonaws.com/email/map-black.png') no-repeat left top;
-            background-size: 100% 627px;
+            background-size: 100% 327px;
         }
         
         .center-container {
@@ -25,7 +25,7 @@
             margin-left: 10%;
             margin-right: 10%;
 
-            margin-top:250px;
+            margin-top:50px;
             display:inline-block;
         }
         
@@ -37,7 +37,7 @@
 
         .new-header img {
             height: auto;
-            width: 220px;
+            width: 160px;
         }
                     
         .content-container {
@@ -49,8 +49,8 @@
         
         .content {
             padding: 60px;
-            padding-top: 100px;
-            min-height: 300px;
+            padding-top: 10px;
+            padding-bottom: 30px;
             color: #7c888d;
             z-index: 0;
         }
@@ -61,7 +61,7 @@
             color: #a7afb3;
             text-align: center;
             line-height: 20px;
-            margin-top: 135px;
+            margin-top: 45px;
         }
         
         .footer a {
@@ -86,9 +86,9 @@
         .title {
             color: #3c3c3c;
             font-size: 25px;
-            line-height: 39px;
-            text-align: center;
-            margin-bottom: 62px;
+            line-height: 29px;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
         
         .bold {
@@ -124,6 +124,7 @@
         .flex-center-column > span {
             display: block;
         }
+        
     </style>
 </head>
 
