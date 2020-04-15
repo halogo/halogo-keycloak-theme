@@ -1,5 +1,22 @@
 $(function() {
     
+    if(env) {
+        var code;
+        switch(env.country) {
+            case "au":
+                code = '+61';
+            break;
+            case "sg":
+                code = '+65';
+            break;    
+        }
+
+        if(code) {
+            $("option[value='" + code + "']")
+                .attr("selected", "selected");
+        }
+    }
+    
     setCharAt = (str,index,chr) => {
         if(index > str.length-1) return str;
         return str.substr(0,index) + chr + str.substr(index+1);
