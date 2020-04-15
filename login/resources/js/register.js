@@ -4,9 +4,13 @@ $(function() {
         var code;
         switch(env.country) {
             case "au":
+                $('#terms_link').attr("href", "https://www.halogo.com.au/terms");
+                $('#privacy_link').attr("href", "https://www.halogo.com.au/privacy");
                 code = '+61';
             break;
             case "sg":
+                $('#terms_link').attr("href", "https://www.halogo.sg/terms");
+                $('#privacy_link').attr("href", "https://www.halogo.sg/privacy");
                 code = '+65';
             break;    
         }
