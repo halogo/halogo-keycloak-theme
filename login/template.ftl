@@ -167,9 +167,9 @@
     <script>
         var origin = window.location.origin;
         var r = /https?:\/\/(staging|uat)\.auth\.halogo\.io/;
-        var groups = origin.match(r).groups;
-        if(groups.env) {
-            $(document.body).append('<h2>' + groups.env + '</h2');
+        var groups = origin.match(r);
+        if(groups.length > 1) {
+            $(document.body).append('<h1>' + groups[1] + ' - ' + env.country + '</h1>');
         }
     </script>
 
