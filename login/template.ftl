@@ -164,6 +164,15 @@
       </div>
     </footer>
 
+    <script>
+        var origin = window.location.origin;
+        var r = /https?:\/\/(staging|uat)\.auth\.halogo\.io/;
+        var groups = origin.match(r).groups;
+        if(groups.env) {
+            $(document.body).append('<h2>' + groups.env + '</h2');
+        }
+    </script>
+
     <div id="global-app-error" class="app-error hidden"></div>
 
 </body>
