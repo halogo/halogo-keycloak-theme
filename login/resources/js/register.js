@@ -19,6 +19,8 @@ $(function() {
             $("option[value='" + code + "']")
                 .attr("selected", "selected");
         }
+
+        $("#country").val(env.country);
     }
     
     setCharAt = (str,index,chr) => {

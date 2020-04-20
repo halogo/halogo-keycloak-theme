@@ -13,6 +13,7 @@
             ${msg('termsAndCondistionsError')}
         </div>
         <form id="kc-register-form" class="${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
+          <input type="hidden" name="user.attributes.country" id="country" />
           <input type="text" readonly value="this is not a login form" style="display: none;">
           <input type="password" readonly value="this is not a login form" style="display: none;">
             <div id="kc-login-details">
