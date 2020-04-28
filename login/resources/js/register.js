@@ -22,6 +22,9 @@ $(function() {
 
         $("#country").val(env.country);
     }
+
+    // dynamic copyright year
+    $('footer a').html(`&copy; ${new Date().getFullYear()} HaloGo`);
     
     setCharAt = (str,index,chr) => {
         if(index > str.length-1) return str;
