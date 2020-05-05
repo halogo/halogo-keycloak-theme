@@ -8,7 +8,7 @@
                 </div>
     
                 <div class="copyright">
-                    © HaloGo 2019 All rights reserved. For support email us at <a href="mailto:hello@halgo.com.au">hello@halgo.com.au</a>
+                    © HaloGo 2020 All rights reserved. For support email us at <a href="mailto:support@halogo.io">support@halogo.io</a>
                 </div>
             </div>
 
