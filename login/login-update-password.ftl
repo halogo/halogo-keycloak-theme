@@ -14,7 +14,7 @@
                     <label for="password-new" class="${properties.kcLabelClass!}">${msg("passwordNew")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password-new" id="password" class="${properties.kcInputClass!} ${messagesPerField.printIfExists('password-new',properties.kcFormGroupErrorClass)}" name="password-new" placeholder="${msg('passwordNew')}" autocomplete="new-password" />
+                    <input type="password" id="password" class="${properties.kcInputClass!} ${messagesPerField.printIfExists('password-new',properties.kcFormGroupErrorClass)}" name="password-new" placeholder="${msg('passwordNew')}" autocomplete="new-password" />
                 </div>
             </div>
 
